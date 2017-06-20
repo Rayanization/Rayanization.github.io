@@ -190,9 +190,9 @@ nav a.selected {
 
 #pagetitle {
     background: #000;
-    background-image: url(../img/);
-    background-size: cover;
-    background-position: center top;
+    background-image: url(../img/Pic-intro.jpg);
+    background-size: contain;
+    background-position: center 30%;
     
     width: 100vw;
     height: 90vh;
@@ -200,7 +200,7 @@ nav a.selected {
 }
 
 .page {
-    display: block;
+    display:  block;
     position: relative;
     overflow: hidden;
     
@@ -295,7 +295,7 @@ nav a.selected {
 }
 
 .paraholder2 {
-    width: 90%;
+    width: 100%;
     height: 1350px;
     position: relative;
     margin: 0 auto;
@@ -303,7 +303,7 @@ nav a.selected {
 }
 
 .paraholder3 {
-    width: 90%;
+    width: 100%;
     height: 1240px;
     position: relative;
     margin: 0 auto;
@@ -311,7 +311,7 @@ nav a.selected {
 }
 
 .paraholder4 {
-    width: 90%;
+    width: 100%;
     height: 2050px;
     position: relative;
     margin: 0 auto;
@@ -319,7 +319,7 @@ nav a.selected {
 }
 
 .paraholder5 {
-    width: 90%;
+    width: 100%;
     height: 1800px;
     position: relative;
     margin: 0 auto;
@@ -327,7 +327,7 @@ nav a.selected {
 }
 
 .paraholder6 {
-    width: 90%;
+    width: 100%;
     height: 1300px;
     position: relative;
     margin: 0 auto;
@@ -390,20 +390,20 @@ nav a.selected {
     font-family: "lato",sans-serif;
     font-weight: 100;
     font-style: normal; 
-    line-height: 25px;
+    line-height: 27px;
     color: #fff;
     text-transform: none;
     text-align: left;
     letter-spacing: 0px; 
-    margin: 50px 40px;
-    padding: 13px 10px;
+    margin: 30px 40px;
+    padding: 0px 10px;
 }
 
 
 .p-large {
-    font-size: 23px;
+    font-size: 25px;
     font-family: "museo-sans-display",sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal; 
     color: #000;
     line-height: 34px;
@@ -411,22 +411,27 @@ nav a.selected {
     text-align: center;
     letter-spacing: 0px; 
     margin: 0 auto;
-    word-spacing: 2px;
+    word-spacing: 5px;
    
+}
+
+#para-center{
+    margin-top:40px;
+    
 }
 
 .p-center {
    font-size: 17px;
     font-family: "museo-sans-display",sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal; 
     color: #000;
     line-height: 29px;
     text-transform: none;
     text-align: left;
     letter-spacing: 0px; 
+    margin: 20px 0px;
     
-    margin: 10px 0; 
     
 }
 
@@ -436,57 +441,60 @@ nav a.selected {
 .photo{
     position: absolute;
     z-index: -55555;
-    
-    
-    
+    opacity: 0;
+    transition: all 2s linear;
+}
+
+
+.photo.fly-in {
+    opacity: 1;
     
 }
 
 #photo1{
-  top: 50%;
-    left: 50%;
+    top: 300px;
+    left: 520px;
     margin-left: -800px;
     
     
 }
 
 #photo2{
-    top: 50%;
-    left: 50%;
-    margin-left: 100px;
+    position: relative;
+    margin-left: 430px;
+    top:200px;
 }
 
 #photo3{
     
-   top: 50%;
-    left: 50%;
-    margin-left:600px;
+   position: relative;
+    margin-left: -170px;
+    top:200px;
     
 }
 
 #photo4{
-    
-  top: 50%;
-    left: 50%;
-    margin-left: -500px;
+    position: relative;
+  margin-left: 800px;
+    top:200px;
     
 }
 
 
 #photo5{
    
-    top: 50%;
-    left: 50%;
-    margin-left: 600px;
-    margin-bottom: -300px;
+   position: relative;
+    margin-left: -330px;
+    top:500px;
+    
     
 }
 
 #photo6{
     
-    top: 50%;
-    left: 50%;
-    margin-left: -200px;
+    position: relative;
+  margin-left: 700px;
+    top:200px;
     
 }
 
@@ -494,8 +502,8 @@ nav a.selected {
 
 #intro{
     position: relative;
-    top: 20px;
-    border-bottom:  4px solid #000;
+    top: -50px;
+    
     
 }
 
@@ -506,7 +514,7 @@ nav a.selected {
 
 #box1 {
     position: relative;
-    top: 20px;
+    top: 10px;
     
 }
 
@@ -526,13 +534,13 @@ nav a.selected {
 
 #box2 {
     position: relative;
-    top: 10px;
+    top: 20px;
     
 }
 
 #para2 {
     position: relative;
-    top: 20;
+    top: 90px;
     
 }
 
@@ -544,12 +552,12 @@ nav a.selected {
 
 #box3{ 
     position: relative;
-    top: 20px;  
+    top: 60px;  
 }
 
 #para3{ 
     position: relative;
-    top: 20px;   
+    top: 120px;   
 }
 
 
@@ -563,13 +571,13 @@ nav a.selected {
 
 #box4{
     position: relative;
-    top: 10px;
+    top: 100px;
     
 }
 
 #para4{ 
     position: relative;
-    top:20px;   
+    top:130px;   
 }
 
 /*   BOX SCHOOL   */
@@ -587,7 +595,7 @@ nav a.selected {
 
 #para5{ 
     position: relative;
-    top: 200px;    
+    top: 100px;    
 }
 
 
@@ -606,7 +614,7 @@ nav a.selected {
 
 #para6{ 
     position: relative;
-    top: 40px;   
+    top: 100px;   
 }
 
 
@@ -619,31 +627,33 @@ nav a.selected {
 	position: relative;
 	width: 470px;
 	height: auto;
-    
-    
-   
 }
 
-
-
 .slogan1 {
-	top: 50%;
-	left: 50%;
+	top: 50px;
+	left: 700px;
     margin-left:100px;
     margin-top: 120px;
     margin-bottom: 80px;
     font-family: 'lato', sans-serif;
-    color: rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.1);
     font-size: 29px;
     font-weight: 200;
     text-transform: none;
     text-align: left;
     letter-spacing: 2px; 
     line-height: 40px;
-    opacity: 0.4;
-   
-	
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 3s ease-in-out;
 }
+
+
+.slogan1.fly-in {
+    opacity: 0.5;
+    transform: translateX(600px);
+}
+
 
 .item2 {
 	top: 60%;

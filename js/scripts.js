@@ -44,7 +44,21 @@ $(function() {
     }); 
         
         // loop through each .paragraph element
-    $('.title').each(function(){
+    $('.photo').each(function(){
+        
+        // build a scene 
+    var ourScene = new ScrollMagic.Scene({
+      triggerElement: this.children[0],
+      duration: '80%',
+      triggerHook: 0.8 
+    })
+    .setClassToggle( this, 'fly-in')
+    .addTo(controller);
+        
+    }); 
+        
+            // loop through each .paragraph element
+    $('.slogan1').each(function(){
         
         // build a scene 
     var ourScene = new ScrollMagic.Scene({
